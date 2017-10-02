@@ -23,6 +23,7 @@
 
     <script src="app/products/productListCtrl.js"></script>
     <script src="app/products/productDetailCtrl.js"></script>
+    <script src="app/products/ProductEditCtrl.js"></script>
 </head>
 
 <body ng-app="productManagement">
@@ -45,7 +46,7 @@
                 <ul class="nav navbar-nav">
                     <li><a ui-sref="productList">Product List</a></li>
                     <li>
-                        <a ui-sref="productEdit({productId:0})">
+                        <a ui-sref="productEdit.info({productId:0})">
                             <i class="glyphicon glyphicon-plus"></i>Add Product
                         </a>
                     </li>
