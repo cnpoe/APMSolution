@@ -1,19 +1,27 @@
-<form name="productForm">
+<form name="productForm" class="form-horizontal" role="form">
     <fieldset>
         <legend>Basic Product Information</legend>
-        <div>
-            <label for="inputProductName">Product Name</label>
-            <input id="inputProductName"
-                   type="text"
-                   placeholder="Product Name"
-                   ng-model="vm.product.productName"/>
-        </div>
-        <div>
-            <label for="inputDescription">Description</label>
-            <textarea id="inputDescription"
-                      placeholder="Description"
-                      rows="3"
-                      ng-model="vm.product.description"/>
+        <div class="form-group">
+            <div>
+                <label for="inputProductName" class="col-md-2 control-label">Product Name</label>
+                <div class="col-md-4">
+                    <input id="inputProductName"
+                           type="text"
+                           placeholder="Product Name"
+                           ng-model="vm.product.productName"
+                           class="form-control"/>
+                </div>
+            </div>
+            <div>
+                <label for="inputDescription" class="col-md-2 control-label">Description</label>
+                <div class="col-md-4">
+                    <textarea id="inputDescription"
+                              placeholder="Description"
+                              rows="3"
+                              ng-model="vm.product.description"
+                              class="form-control"/>
+                </div>
+            </div>
         </div>
     </fieldset>
 </form>
