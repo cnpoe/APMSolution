@@ -4,6 +4,7 @@
         ["common.services",
         "ui.router",
         "ui.mask",
+        "ui.bootstrap",
         "productResourceMock"
         ]);
     
