@@ -33,5 +33,19 @@
        vm.cancel = function () {
            $state.go('productList');
        }
+
+       vm.addTags = function (tags) {
+           if (tags){
+               var array = tags.split(',');
+               vm.product.tags = vm.product.tags ? vm.product.tags.concat(array): array;
+               vm.newTags = "";
+           }else{
+               alert("Please enter one of more tags separated by commas");
+           }
+       }
+
+       vm.removeTag = function (idx) {
+           vm.product.tags.splice(idx, 1);
+       }
    }
 }());
