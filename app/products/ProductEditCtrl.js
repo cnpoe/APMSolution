@@ -27,7 +27,10 @@
        }
 
        vm.submit = function () {
-           vm.product.$save();
+           vm.product.$save(function (data) {
+               toastr.success("Save Successful");
+               }
+           );
        }
 
        vm.cancel = function () {
